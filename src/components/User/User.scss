@@ -1,0 +1,36 @@
+.user-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 1em;
+  min-width: 450px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  &__row-head {
+    background-color: #ccc;
+    padding: 5px;
+  }
+
+  &__cell {
+    padding: 10px;
+  }
+
+  &__row {
+    border-bottom: 1px solid #bbb;
+    padding: 5px;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
